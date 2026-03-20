@@ -1,0 +1,32 @@
+{
+  "name": "node-docker-ai-ops",
+  "version": "0.1.0",
+  "description": "AI 运维系统 - Nest 后端，Docker 管理，日志 RAG，AI 分析",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "start:dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/platform-express": "^9.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "dockerode": "^3.3.0",
+    "rxjs": "^7.0.0",
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "axios": "^1.4.0",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5",
+    "eslint": "^8.0.0",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.0"
+  }
+}
